@@ -1,0 +1,29 @@
+<app-navegacion></app-navegacion>
+
+<button class="btn btn-success m-4" routerLink="/agregar">Agregar Cliente</button>
+
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-9">
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let cliente of clientes">
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.apellido}}</td>
+            <td>{{cliente.direccion}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
