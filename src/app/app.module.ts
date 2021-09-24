@@ -8,6 +8,7 @@ import { ClientesFormComponent } from './components/clientes-form/clientes-form.
 import { HttpClientModule} from '@angular/common/http'
 
 import { RouterModule, Routes } from '@angular/router';
+import { ChartPedidosComponent } from './components/chart-pedidos/chart-pedidos.component';
 
 
 //  Enrutamiento. Desde aqui vamos a crear las rutas para que aparezcan los diferentes componentes que nosotros queramos
@@ -22,7 +23,8 @@ const routes: Routes = [
     AppComponent,
     ListarComponent,
     NavegacionComponent,
-    ClientesFormComponent
+    ClientesFormComponent,
+    ChartPedidosComponent
   ],
   imports: [
     BrowserModule,
